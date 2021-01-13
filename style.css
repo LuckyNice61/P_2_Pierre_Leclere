@@ -44,6 +44,7 @@ header {
   /*conteneur hebergement à s'inscrire*/
   display: flex;
   flex-wrap: wrap;
+  /*position: relative; utile pour le ::before*/
 }
 
 nav ul {
@@ -65,6 +66,15 @@ nav a {
   color: #0065fc;
   text-decoration: none;
 }
+
+/*.menu_nav ::before{ /*Je preferes laisser en hover à mon sens c'est plus esthetique*/ 
+	/*content: '';
+	width: 70px;
+	height: 3px;
+	background-color:#0065fc;
+	position: absolute;
+	bottom: 11vh;
+}*/
 
 nav a:hover {
   /*Barre bleu */
