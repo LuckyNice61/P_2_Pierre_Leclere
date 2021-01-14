@@ -1,0 +1,459 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  margin: auto;
+}
+
+/*Général*/
+a:hover {
+  color: #0065fc;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+
+/*Logo*/
+
+.logo {
+  width: 25%;
+  height: 30%;
+}
+
+/*Header*/
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2vw 0;
+  width: 95%;
+  margin: auto;
+}
+
+.menu_nav {
+  /*conteneur hebergement à s'inscrire*/
+  display: flex;
+  flex-wrap: wrap;
+  /*position: relative; utile pour le ::before*/
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-right: 9vh;
+  font-size: 1.2rem;
+}
+
+.inscrire_menu {
+  margin-left: -6vh;
+}
+
+nav a {
+  font-size: 0.9rem;
+  color: #0065fc;
+  text-decoration: none;
+}
+
+/*.menu_nav ::before{ /*Je preferes laisser en hover à mon sens c'est plus esthetique*/ 
+	/*content: '';
+	width: 70px;
+	height: 3px;
+	background-color:#0065fc;
+	position: absolute;
+	bottom: 11vh;
+}*/
+
+nav a:hover {
+  /*Barre bleu */
+  border-top: 3px solid #0065fc;
+  border-top-width: 0.3rem;
+  padding-top: 2rem;
+}
+
+#menu_active {
+  color: black;
+}
+
+.menu_inscrire {
+  color: #0065fc;
+  font-weight: bold;
+  font-size: 1rem;
+  align-self: center;
+}
+
+/* Titre principal   class="boutton_inscrire"*/
+
+.search {
+  /*Conteneur "trouvez votre heberg." à filtres "animaux."*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: auto;
+  margin-top: -1vw;
+  /*border: 1px solid  black;*/
+}
+
+.trouvez_nature {
+  /*conteneur h1 et p*/
+  display: flex;
+  flex-direction: column;
+}
+
+.search_h1 {
+  /*trouvez votre heberg..*/
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+.search_p {
+  font-size: 0.9rem;
+  margin-top: -1%;
+}
+
+/* Barre de recherche*/
+
+.barre_search {
+  /*ensemble de la barre de recherche*/
+  display: flex;
+  height: 43px;
+}
+
+.icone {
+  /*entoure l'icone position*/
+  border-radius: 2vh 0vh 0vh 2vh;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  height: 43px;
+}
+
+.fa-map-marker-alt {
+  /* couleur de l'icone*/
+  color: black;
+}
+
+.boutton {
+  /*boutton rechercher*/
+  border-radius: 0px 15px 15px 0px;
+  background-color: #0065fc;
+  color: white;
+  width: 110px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  font-weight: bolder;
+}
+
+.fa-search {
+  visibility: hidden;
+}
+
+.desktop_screen {
+  align-self: center;
+  margin-left: 15%;
+}
+
+.label {
+  border: 1px solid #deebff;
+  width: 37vh;
+}
+
+input {
+  /*pour changer la police placeholder*/
+  font-weight: bolder;
+  padding-left: 2vh;
+  color: black;
+}
+
+input::-webkit-input-placeholder {
+  color: black !important; /* permet de changer la couleur du texte*/
+}
+
+/*Filtres*/
+
+.filtres_choix h3 {
+  font-size: 1rem;
+}
+
+.filtres_choix {
+  /*conteneur des filtres*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 2vw;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.filtre {
+  /*icone + p*/
+  border: 1px solid #f2f2f2;
+  border-radius: 20px 20px 20px 20px;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  margin-left: 7vh;
+}
+
+.filtre i {
+  /*entourage et icone*/
+  background-color: #deebff;
+  border-radius: 100%;
+  border: 1px solid #deebff;
+  padding: 10px;
+  font-size: 14px;
+  color: #0065fc;
+}
+
+.filtre p {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  margin: auto;
+  white-space: nowrap; /*pour que animaux autorisé soit sur la même ligne*/
+  padding-left: 2vh; /*pour espacer les paragraphes des icones*/
+  padding-right: 3.5vh;
+}
+
+.phrase_info i {
+  display: inline-block; /*Pour créer le cercle de l'icone*/
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px #888;
+  padding: 0.3rem 0.5rem;
+  margin-bottom: 1.5vw;
+  margin-top: 1.5vw;
+}
+
+.fa-info {
+  font-size: 0.6rem;
+  color: #0065fc;
+}
+
+/*Hébergments*/
+
+.corp {
+  /*Conteneur hebergement + populaires*/
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 95%;
+  margin: auto;
+}
+
+article {
+  /*Conteneur hebergement*/
+  order: 2;
+  flex: 60%;
+  margin-right: 1.5%;
+  /* espacement entre herbergements à marseille et populaires*/
+  border-radius: 3vh 3vh 3vh 3vh;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+}
+
+article h2 {
+  /* Hebergements à Marseille*/
+  margin-left: 3.1vw;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  margin-top: 6vh;
+  margin-bottom: 3.5vh;
+}
+
+.afficher_plus {
+  /*Afficher plus*/
+  margin-bottom: 6vh;
+  margin-left: 3.1vw;
+  margin-top: 2vh;
+  font-size: 1rem;
+}
+
+.card_hebergement {
+  /*Conteneur carte_hebergements*/
+  margin: auto;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  /* Conteneur de chaques images + info */
+  min-width: 200px;
+  /* pour afficher correctement les images avec une fenetre plus petite*/
+  flex: 25%;
+  height: 35vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-bottom: 5%;
+  background-color: white;
+  border-radius: 3vh 3vh 3vh 3vh;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  object-fit: cover;
+  width: 95%;
+  height: 55%;
+  margin: auto;
+  border-radius: 20px 20px 0px 0px;
+  align-self: center;
+}
+
+.texte {
+  margin: 5px 0px 0px 10px;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+  margin-bottom: 2vh;
+}
+
+.texte h3 {
+  margin-top: 4%;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1vw;
+}
+
+.texte p {
+  /* Espace entre p et h3*/
+  line-height: 0;
+  font-size: 0.9rem;
+}
+.texte img{
+    width: 110px;
+    height: 20px;
+    margin-top: 1vh;
+    margin-left: -4px;
+}
+.texte .full {
+  color: #0065fc;
+}
+
+.texte .false {
+  color: #deebff;
+}
+
+article a {
+  color: black;
+}
+
+/*Populaires*/
+
+aside {
+  /* Conteneur populaires*/
+  order: 1;
+  min-width: 200px;
+  flex: 30%;
+  margin-left: 1vw;
+  /*Espace entre herbegement et populaire*/
+  border-radius: 20px 20px 20px 20px;
+  background-color: #f2f2f2;
+}
+
+aside h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 2.8vw;
+  margin-right: 2.8vw;
+  margin-top: 6vh;
+  margin-bottom: 3.5vh;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+aside a {
+  color: black;
+}
+
+.fa-chart-line {
+  color: black;
+}
+
+.card_populaire {
+  /*conteneur toutes images + info */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-basis: max-content;
+  /*width: 95%;*/
+}
+
+.card1 {
+  /*Conteneur unique image + info*/
+  min-width: 255px;
+  height: 150px;
+  /* Pour avoir une hauteur du cadre blanc qui contient image et info cohérente*/
+  margin-right: 2vw;
+  margin-left: 2vw;
+  margin-bottom: 8%;
+  background-color: white;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.card1 img {
+  object-fit: cover;
+  width: 35%;
+  height: 95%;
+  margin-left: 5px;
+  margin-top: 5px;
+  border-radius: 20px 0px 0px 20px;
+  align-self: center;
+}
+
+.texte_populaire {
+  margin-left: 1rem;
+}
+
+.texte_populaire h3 {
+  font-size: 1rem;
+}
+
+.texte_populaire p {
+  line-height: 1vw;
+  font-size: 0.9rem;
+}
+
+.texte_populaire i {
+  line-height: 10vh;
+}
+
+.texte_populaire .full {
+  /*pour gerer la couleur des icones etoiles*/
+  color: #0065fc;
+}
+
+.texte_populaire .false {
+  color: #deebff;
+}
