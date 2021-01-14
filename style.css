@@ -353,6 +353,8 @@ article a {
 
 /*Populaires*/
 
+
+
 aside {
   /* Conteneur populaires*/
   order: 1;
@@ -396,7 +398,7 @@ aside a {
 
 .card1 {
   /*Conteneur unique image + info*/
-  width: 300px;
+  min-width: 300px;
   height: 150px;
   /* Pour avoir une hauteur du cadre blanc qui contient image et info cohérente*/
   margin-right: 2vw;
