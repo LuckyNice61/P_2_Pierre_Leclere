@@ -183,10 +183,6 @@ input {
   color: black;
 }
 
-input::-webkit-input-placeholder {
-  color: black !important; /* permet de changer la couleur du texte*/
-}
-
 /*Filtres*/
 
 .filtres_choix h3 {
@@ -396,12 +392,11 @@ aside a {
   justify-content: space-around;
   align-items: center;
   flex-basis: max-content;
-  /*width: 95%;*/
 }
 
 .card1 {
   /*Conteneur unique image + info*/
-  min-width: 255px;
+  width: 300px;
   height: 150px;
   /* Pour avoir une hauteur du cadre blanc qui contient image et info cohérente*/
   margin-right: 2vw;
@@ -440,7 +435,7 @@ aside a {
 }
 
 .texte_populaire i {
-  line-height: 10vh;
+  line-height: 5vh;
 }
 
 .texte_populaire .full {
@@ -561,7 +556,7 @@ footer ul {
 }
 
 .footer_2 {
-  margin-left: 29vh;
+  margin-left: 33vh;
   line-height: 2.5vw;
 }
 
@@ -792,6 +787,7 @@ footer a {
     margin-top: 10vw;
     flex: 95%;
   }
+
   aside {
     flex: 95%;
   }
@@ -899,6 +895,12 @@ footer a {
 
   .card img {
     height: 70%;
+  }
+
+  .texte img{
+    width: 80px;
+    height: 15px;
+    margin-left: 0.5vh;
   }
 
   aside {
