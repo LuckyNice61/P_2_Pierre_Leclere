@@ -344,12 +344,11 @@ article h2 {
   font-size: 0.9rem;
 }
 
-.texte .full {
-  color: #0065fc;
-}
-
-.texte .false {
-  color: #deebff;
+.texte img{
+  width: 110px;
+  height: 20px;
+  margin-top: 1vh;
+  margin-left: -4px;
 }
 
 article a {
