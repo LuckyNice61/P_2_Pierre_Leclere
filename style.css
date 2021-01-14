@@ -595,7 +595,7 @@ footer a {
     /*Bouton s'inscrire position*/
     position: absolute;
     top: 4%;
-    left: 60%;
+    left: 65%;
   }
 
   nav a:hover {
@@ -623,7 +623,7 @@ footer a {
 
   .boutton {
     width: 45px;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 0px 10px 10px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -667,7 +667,7 @@ footer a {
     margin-left: 5%;
   }
   .petit_mot {
-    margin-left: 6.5%;
+    margin-left: 7.2%;
   }
   article {
     /* pour espacer la section hebergement de poupulaires*/
@@ -838,8 +838,12 @@ footer a {
   }
 
   footer {
-    margin-top: 12vw;
-    flex-direction: column;
+    margin-top: 10vw;
+  }
+
+  .footer_2 h2{
+    line-height: 2vh;
+    margin-left: 2vh;
   }
 
   .footer_1 {
@@ -847,7 +851,7 @@ footer a {
   }
 
   .footer_2 {
-    margin-left: 0;
+    margin-left: 8vh;
     line-height: 4vh;
   }
 }
