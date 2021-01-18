@@ -320,6 +320,12 @@ article h2 {
   align-self: center;
 }
 
+/*effet zoom*/
+.card img:hover{
+  transform: scale(1.2);
+  transition: all 2s;
+}
+
 .texte {
   margin: 5px 0px 0px 10px;
   font-size: 0.9rem;
@@ -423,6 +429,12 @@ aside a {
   align-self: center;
 }
 
+/*effet zoom*/
+.card1 img:hover{
+  transform: scale(1.2);
+  transition: all 2s;
+}
+
 .texte_populaire {
   margin-left: 1rem;
 }
@@ -485,6 +497,12 @@ aside a {
     "zone1 zone2 zone4 zone6"
     "zone1 zone3 zone4 zone6";
   margin-bottom: 5%;
+}
+
+/*effet zoom*/
+.card_activité img:hover{
+  transform: scale(1.2);
+  transition: all 2s;
 }
 
 .carte_activité {
