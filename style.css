@@ -436,6 +436,14 @@ aside a {
   font-size: 0.9rem;
 }
 
+/*Test ::before et ::after pour s'entrainer*/
+./*texte_populaire p ::after{
+  content: url('images/etoile_0.jpg');
+  top: 43px;
+  right: 135px;
+  position: relative;
+}*/
+
 .texte_populaire i {
   line-height: 5vh;
 }
